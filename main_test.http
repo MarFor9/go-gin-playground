@@ -1,0 +1,33 @@
+###
+
+GET localhost:8080/recipes
+
+###
+GET localhost:8080/recipes/user-friendly-name-of-my-favorite-cookies
+
+###
+
+POST localhost:8080/recipes
+Content-Type: application/json
+
+{
+  "name": "user friendly name of my favorite cookies",
+  "title": "The Modern Sound of Betty Carter",
+  "author": "Betty Carte"
+}
+
+### Add a recipe with the name "1"
+
+POST localhost:8080/recipes
+Content-Type: application/json
+
+{
+  "name": "1",
+  "title": "The Modern Sound of Betty Carter",
+  "author": "Betty Carte"
+}
+
+### DELETE a recipe with the name "1"
+
+DELETE localhost:8080/recipes/1
+Content-Type: application/json
