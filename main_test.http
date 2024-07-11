@@ -1,4 +1,4 @@
-###
+### Get all recipes
 
 GET localhost:8080/recipes
 
@@ -31,3 +31,15 @@ Content-Type: application/json
 
 DELETE localhost:8080/recipes/1
 Content-Type: application/json
+
+###
+
+### Update recipe
+PUT localhost:8080/recipes/1
+Content-Type: application/json
+
+{
+  "name": "1",
+  "title": "Update",
+  "author": "Betty Carte"
+}

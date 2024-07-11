@@ -14,7 +14,7 @@ func main() {
 		group.GET("/:id", handler.GetRecipe)
 		group.POST("/", handler.CreateRecipe)
 		group.DELETE("/:id", handler.DeleteRecipe)
-		group.PUT("/", handler.UpdateRecipe)
+		group.PUT("/:id", handler.UpdateRecipe)
 	}
 
 	log.Fatal("Some error when try to run server", router.Run("localhost:8080"))
