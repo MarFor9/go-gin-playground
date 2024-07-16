@@ -17,5 +17,5 @@ func main() {
 		group.PUT("/:id", handler.UpdateRecipe)
 	}
 
-	log.Fatal("Some error when try to run server", router.Run("localhost:8080"))
+	log.Fatal("Some error when try to run server", router.Run(":8080"))
 }
